@@ -30,6 +30,9 @@
   <link rel="stylesheet" href="Asset/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="Asset/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="Asset/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/js/tempusdominus-bootstrap-4.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/css/tempusdominus-bootstrap-4.min.css" crossorigin="anonymous" />
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
     @yield('container')
@@ -79,13 +82,13 @@
           </li>
           <li class="nav-header">LAPORAN</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{url('/LaporanPemesanan')}}" class="nav-link">
               <i class="fas fa-file nav-icon"></i>
               <p>Laporan Pemesanan</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{url('/LaporanStok')}}" class="nav-link">
               <i class="fas fa-book nav-icon"></i>
               <p>Laporan Stok</p>
             </a>

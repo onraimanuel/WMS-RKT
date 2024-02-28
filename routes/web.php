@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\LaporanController;
+
 
 
 /*
@@ -19,3 +21,6 @@ use App\Http\Controllers\ProdukController;
 Route::get('/',[DashboardController::class, 'Dashboard'])->name("Dashboard");
 Route::get('/ProdukToko',[ProdukController::class, 'Produk'])->name("ProdukToko");
 Route::get('/PembelianProduk',[ProdukController::class, 'PembelianProduk'])->name("PembelianProduk");
+Route::get('/LaporanPemesanan',[LaporanController::class, 'LaporanPemesanan'])->name("LaporanPemesanan");
+Route::get('/LaporanStok',[LaporanController::class, 'LaporanStok'])->name("LaporanStok");
+
