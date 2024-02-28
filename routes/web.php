@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProdukController;
 
 
 /*
@@ -16,4 +17,5 @@ use App\Http\Controllers\DashboardController;
 */
 
 Route::get('/',[DashboardController::class, 'Dashboard'])->name("Dashboard");
-
+Route::get('/ProdukToko',[ProdukController::class, 'Produk'])->name("ProdukToko");
+Route::get('/PembelianProduk',[ProdukController::class, 'PembelianProduk'])->name("PembelianProduk");
